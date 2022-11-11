@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Snake Game</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="audiocont">
+    <p class="audiotext">Klik play musik ▶️ hela sebelum join!!! <br> kalau sudah.. klik ini ><span class='playkn' style="color:red;text-shadow:none"> PUTAR !!!</span></p>
+<audio controls style='text-align: center' class='play'>
+  <source src="/folder/audio.wav" type="audio/wav">
+  <source src="/folder/audio.ogg" type="audio/ogg">
+  <source src="ludok.mp3" type="audio/mpeg" autoplay>
+  <!--Tulisan akan muncul jika tak ada file yang didukung oleh browser -->
+  <p>
+    Audio tidak disupport browser
+  </p>
+</audio>
+  </div></div>
+  
+  <div class="container">
+ <h1 style="text-align:center">Undangan Ludo King</h1>
+ 
+ <div class="card">
+   
+   <h3 class='selamat'>Dengan Hormat</h3>
+   <p class="desc">Dalam rangka memperingati hari pahlawan, dengan ini kami menyampaikan akan di adakan lomba turnamen Ludo se indonesia. Adapun detail lomba ini adalah sebagai berikut </p>
+   <p class="date">Hari ini, pukul 18.30 - selesai <br>Basecamp Sumedang</p>
+   <div class="contactme">
+     <a href="wa.me/088222233072">Whatsaap Haszrul</a> |      <a href="wa.me/088222233072">Join Grup</a>
+   </div>
+ </div>
+ </div>
+ 
+ <script>
+   
+   const play = document.querySelector('.playkn')
+   
+   play.addEventListener('click',()=>{
+     const audiocont = document.querySelector('.audiocont')
+    const tr = prompt('Wilujeung, Asupkn Ngaran :')
+   
+    if(tr){
+      
+      setTimeout(()=>{
+        const audiocont = document.querySelector('.audiocont')
+        const sel = document.querySelector('.selamat')
+      audiocont.style.zIndex = '-999999999'
+  audiocont.style.backgroundColor='transparent'
+  audiocont.style.justifyContent = 'flex-start'
+sel.innerHTML = 'Dengan Hormat Sodara' + tr
+      },0)
+      
+    }else{
+      alert("ok")
+    }
+     
+   })
+   
+ </script>
+</body>
+</html>
+  
